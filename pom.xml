@@ -35,7 +35,7 @@
 		<module>daytrader-ee7-ejb</module>
 		<module>daytrader-ee7-web</module>
 		<module>daytrader-ee7</module>
-        <module>daytrader-ee7-wlpcfg</module>
+        <!--module>daytrader-ee7-wlpcfg</module-->
     </modules>
 
 </project>
