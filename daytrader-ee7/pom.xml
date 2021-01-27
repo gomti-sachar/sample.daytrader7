@@ -52,7 +52,7 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>2.6</version>
                 <executions>
-                    <execution>
+                    <!--execution>
 						<id>copy-resources1</id>
                         <phase>package</phase>
                         <goals>
@@ -70,8 +70,8 @@
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
-                    </execution>
-					 <execution>
+                    </execution-->
+					 <!--execution>
 						 <id>copy-resources2</id>
                         <phase>package</phase>
                         <goals>
@@ -89,11 +89,11 @@
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
-                    </execution>
+                    </execution-->
                 </executions>
             </plugin>
 			<!-- Enable liberty-maven plugin so that we can start and stop a server before running tests -->
-            <plugin>
+            <!--plugin>
                 <groupId>net.wasdev.wlp.maven.plugins</groupId>
                 <artifactId>liberty-maven-plugin</artifactId>
                 <version>1.2.1</version>
@@ -123,9 +123,9 @@
                     <serverName>daytrader7Sample</serverName>
                     <userDirectory>${basedir}/../daytrader-ee7-wlpcfg</userDirectory>
                 </configuration>
-            </plugin>
+            </plugin-->
             <!-- Plugin to run functional tests -->
-            <plugin>
+            <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.18.1</version>
@@ -160,9 +160,9 @@
                     <summaryFile>${project.build.directory}/test-reports/fvt/failsafe-summary.xml</summaryFile>
                     <reportsDirectory>${project.build.directory}/test-reports/fvt</reportsDirectory>
                 </configuration>
-            </plugin>
+            </plugin-->
             <!-- Plugin to run unit tests -->
-            <plugin>
+            <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18.1</version>
@@ -181,7 +181,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin-->
         </plugins>
     </build>
 
